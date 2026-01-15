@@ -1,0 +1,55 @@
+.block-target {
+  display: flex;
+  justify-content: center;
+  gap: 0.8px;
+  background-color: rgb(138, 138, 138);
+  width: fit-content;
+  margin: 0 auto;
+}
+.block-target__miss,
+.block-target__single,
+.block-target__double,
+.block-target__triple {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 10px 10px;
+}
+
+.block-target__miss,
+.block-target__single {
+  background-color: rgb(255, 242, 224);
+}
+.block-target__double {
+  background-color: rgb(255, 223, 178);
+}
+.block-target__triple {
+  background-color: rgb(255, 209, 145);
+}
+.block-target__next {
+}
+.block-target__next-enter {
+  background-color: rgb(255, 242, 224);
+  height: 40px;
+}
+.block-target__next-player {
+  padding: 10px;
+  background-color: rgb(253, 181, 81);
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.block-target__next-player p {
+  margin: 0;
+}
+
+.block-target__miss:active,
+.block-target__single:active,
+.block-target__double:active,
+.block-target__triple:active,
+.block-target__next-enter:active,
+.block-target__next-player:active {
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0px 0px 10px #a1a1a1;
+  -moz-box-shadow: inset 0px 0px 10px #a1a1a1;
+  box-shadow: inset 0px 0px 10px #a1a1a1;
+}

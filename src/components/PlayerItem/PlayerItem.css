@@ -1,0 +1,21 @@
+.player-item {
+  width: clamp(80px, 150px, 200px);
+  min-width: 80px;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(92, 92, 92);
+}
+.player-item_active {
+  background-color: rgb(255, 0, 0);
+}
+.player-item__score {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.player-item__name {
+  padding-bottom: 5px;
+}
+
+.player-item__mpr {
+  background-color: black;
+}
