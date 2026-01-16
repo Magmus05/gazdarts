@@ -1,19 +1,30 @@
 .player-setup {
-  background: #f5f5f5;
-  padding: 30px;
-  border-radius: 10px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.player-setup h2 {
+  margin: 0;
+}
 .form-group {
-  margin: 20px 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .form-group label {
   min-width: 150px;
   font-weight: bold;
+}
+
+.button-start {
+  background-color: rgb(231, 255, 165);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.button-start:active {
+  transform: translateY(1px);
+  box-shadow: none;
 }

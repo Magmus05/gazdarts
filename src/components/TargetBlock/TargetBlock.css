@@ -1,15 +1,17 @@
 .block-target {
   display: flex;
+  max-width: 1000px;
   justify-content: center;
   gap: 0.8px;
   background-color: rgb(138, 138, 138);
-  width: fit-content;
+ height: 100px;
   margin: 0 auto;
 }
 .block-target__miss,
 .block-target__single,
 .block-target__double,
 .block-target__triple {
+  flex: 1 1 20%;
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -27,12 +29,15 @@
   background-color: rgb(255, 209, 145);
 }
 .block-target__next {
+  flex: 1 1 20%;
+
 }
 .block-target__next-enter {
   background-color: rgb(255, 242, 224);
   height: 40px;
 }
 .block-target__next-player {
+ 
   padding: 10px;
   background-color: rgb(253, 181, 81);
   line-height: 15px;
@@ -40,6 +45,7 @@
 }
 .block-target__next-player p {
   margin: 0;
+
 }
 
 .block-target__miss:active,
