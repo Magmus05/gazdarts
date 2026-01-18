@@ -1,11 +1,12 @@
 // src/components/PlayerSetup.tsx
-import React, { useState } from "react";
+import React from "react";
 import { useGameConfig } from "../../store/gameConfig";
-import './PlayerSetup.css'
+import "./PlayerSetup.css";
 
 export const PlayerSetup: React.FC = () => {
-  const [playerCount, setPlayerCount] = useState<number>(2);
-  const {addPlayers, maxPlayers} = useGameConfig((store) => store);
+  const { addPlayers, maxPlayers, playerCount, setPlayerCount } = useGameConfig(
+    (store) => store
+  );
 
   return (
     <header className="player-setup">
@@ -24,7 +25,9 @@ export const PlayerSetup: React.FC = () => {
         <span>{playerCount}</span>
       </div>
 
-      <button className="button-start" onClick={() => addPlayers(playerCount)}>Начать игру</button>
+      <button className="button-start" onClick={() => addPlayers(playerCount)}>
+        Начать игру
+      </button>
     </header>
   );
 };
