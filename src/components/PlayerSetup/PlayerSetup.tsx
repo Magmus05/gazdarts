@@ -37,7 +37,7 @@ export const PlayerSetup: React.FC = () => {
       </button>
 
       {endOfTheGame ? (
-        <h3>Игра оконченна</h3>
+        <h3>Игра окончена</h3>
       ) : (
         players.length > 0 && (
           <div className="options">

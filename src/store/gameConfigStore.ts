@@ -38,7 +38,7 @@ export const useGameConfig = create<StateType>()(
     maxPlayers: 8,
     currentTarget: 0,
     playerCount: 2,
-    maxRounds: 2,
+    maxRounds: 10,
     currentRound: 0,
     endOfTheGame: false,
     shotCount: 3,
