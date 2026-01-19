@@ -2,7 +2,7 @@ import "./App.css";
 import { PlayerItem } from "./components/PlayerItem/PlayerItem";
 import { PlayerSetup } from "./components/PlayerSetup/PlayerSetup";
 import { TargetBlock } from "./components/TargetBlock/TargetBlock";
-import { useGameConfig } from "./store/gameConfig";
+import { useGameConfig } from "./store/gameConfigStore";
 
 function App() {
   const {players, activePlayer  }= useGameConfig((state) => state);

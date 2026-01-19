@@ -1,5 +1,5 @@
 .player-setup {
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto 5px;
   display: flex;
   flex-direction: column;
@@ -27,4 +27,32 @@
 .button-start:active {
   transform: translateY(1px);
   box-shadow: none;
+}
+
+
+.options{
+  width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.options__rounds{
+  display: flex;
+}
+.options__rounds-item{
+  margin: 0;
+}
+.options__rounds-item_current{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.options__block-dart{
+  display: flex;
+  gap: 5px;
+}
+.options__block-dart-item{
+  width: 24px;
+  background: url(../../assets/dart.png) no-repeat  ;
+
 }
