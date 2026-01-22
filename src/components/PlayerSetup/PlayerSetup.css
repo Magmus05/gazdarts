@@ -1,5 +1,4 @@
 .player-setup {
-  max-width: 100%;
   margin: 0 auto 5px;
   display: flex;
   flex-direction: column;
@@ -18,41 +17,29 @@
   font-weight: bold;
 }
 
-.button-start {
-  background-color: rgb(231, 255, 165);
-  border-radius: 5px;
-  padding: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.button-start:active {
-  transform: translateY(1px);
-  box-shadow: none;
-}
-
-
-.options{
+.options {
   width: 100%;
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.options__rounds{
+.options__rounds {
   display: flex;
 }
-.options__rounds-item{
+.options__rounds-item {
   margin: 0;
 }
-.options__rounds-item_current{
+.options__rounds-item_current {
   font-size: 25px;
   font-weight: 600;
   line-height: 18px;
 }
-.options__block-dart{
+.options__block-dart {
   display: flex;
   gap: 5px;
 }
-.options__block-dart-item{
+.options__block-dart-item {
   width: 24px;
-  background: url(../../assets/dart.png) no-repeat  ;
-
+  background: url(../../assets/dart.png) no-repeat;
 }
+

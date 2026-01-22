@@ -1,21 +1,25 @@
 .block-target {
   display: flex;
-  max-width: 1000px;
   justify-content: center;
   gap: 0.8px;
   background-color: rgb(138, 138, 138);
- height: 100px;
   margin: 0 auto;
 }
 .block-target__miss,
 .block-target__single,
 .block-target__double,
-.block-target__triple {
+.block-target__triple,
+.block-target__next-player {
   flex: 1 1 20%;
   font-size: 2rem;
   font-weight: 600;
+  line-height: 6rem;
   text-transform: uppercase;
-  padding: 20px 10px 10px;
+}
+.block-target__next-player p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 1.3rem;
 }
 
 .block-target__miss,
@@ -30,14 +34,12 @@
 }
 .block-target__next {
   flex: 1 1 20%;
-
 }
 .block-target__next-enter {
   background-color: rgb(255, 242, 224);
   height: 40px;
 }
 .block-target__next-player {
- 
   padding: 10px;
   background-color: rgb(253, 181, 81);
   line-height: 15px;
@@ -45,7 +47,6 @@
 }
 .block-target__next-player p {
   margin: 0;
-
 }
 
 .block-target__miss:active,
@@ -58,4 +59,13 @@
   -webkit-box-shadow: inset 0px 0px 10px #a1a1a1;
   -moz-box-shadow: inset 0px 0px 10px #a1a1a1;
   box-shadow: inset 0px 0px 10px #a1a1a1;
+}
+
+@media screen and (max-width: 600px) {
+  .block-target {
+    flex-wrap: wrap;
+  }
+  .block-target__next-player p {
+  padding-top: 0;
+}
 }
